@@ -17,6 +17,13 @@ phonebook = {
     'c' : '3'
 }
 
+
 with open('15-files\phonbook.dat' , 'wb') as bin:
     pickle.dump(phonebook, bin)
+
+
+# method of read that file
+with open('15-files\phonbook.dat' , 'rb') as bin:
+    data = pickle.load(bin)
+    print(data)
 
