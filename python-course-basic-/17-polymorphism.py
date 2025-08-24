@@ -1,0 +1,22 @@
+class Bird():
+
+    def walk(self):
+        print('hopping around')
+
+class Mammal():
+
+    def walk(self):
+        print('jogginh around...')
+
+class Movements:
+
+    @classmethod
+
+    def move(cls , thing):
+        thing.walk()
+
+bird = Bird()
+dog = Mammal()
+
+Movements.move(bird)
+Movements.move(dog)
